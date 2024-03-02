@@ -20,8 +20,8 @@ spec:
       labels:
         {{- include "python_task.labels" . | nindent 8 }}
     spec:
-      imagePullSecrets:
-        - name: {{ .Values.imagePullSecrets }}
+      # imagePullSecrets:
+      #   - name: {{ .Values.imagePullSecrets }}
       serviceAccountName: {{ include "python_task.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
