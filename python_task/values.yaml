@@ -39,7 +39,7 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 env_vars:
-  mongodb: "mongodb://mongo:27017/users"
+  mongodb: "mongodb://mongo-mongodb.python.svc:27017/users"
 service:
   type: ClusterIP
   port: 5000
