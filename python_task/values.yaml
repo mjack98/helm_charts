@@ -10,6 +10,11 @@ image:
   # Overrides the image tag whose default is the chart appVersion.
   tag: latest
 
+imageCredentials:
+  registry: ""
+  username: ""
+  password: ""
+  email: ""
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
