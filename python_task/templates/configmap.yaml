@@ -1,7 +1,0 @@
-apiVersion: v1
-data:
-  mongodb: {{ .Values.env_vars.mongodb | quote }}
-
-kind: ConfigMap
-metadata:
-  name: python_config
