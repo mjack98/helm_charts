@@ -21,8 +21,8 @@ spec:
         {{- include "python_app.labels" . | nindent 8 }}
 
     spec:
-      imagePullSecrets:
-        - name: {{ .Values.imagePullSecrets }}
+      # imagePullSecrets:
+      #   - name: {{ .Values.imagePullSecrets }}
       serviceAccountName: {{ include "python_app.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
