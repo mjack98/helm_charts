@@ -23,7 +23,6 @@ spec:
     spec:
       imagePullSecrets:
         - name: {{ .Values.imagePullSecrets }}
-      {{- end }}
       serviceAccountName: {{ include "python_app.serviceAccountName" . }}
       securityContext:
         {{- toYaml .Values.podSecurityContext | nindent 8 }}
